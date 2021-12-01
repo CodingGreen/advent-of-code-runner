@@ -4,7 +4,7 @@ This is template repository for completing advent of code in Javascript (specifi
 
 ## Setup
 
-To setup first clone this repository and run `npm install`. The puzzle input is personal to each user and therefore you will require your session token so that the tool can make the request. You can get your session token by following [this quick guide](https://github.com/wimglenn/advent-of-code-wim/issues/1). Next, duplicate the `.env.example` file and rename it `.env` and then enter your session token.
+To setup first clone this repository and run `npm install`. The puzzle input is personal to each user and therefore you will require your session token so that the tool can make the request. You can get your session token by following [this quick guide](https://github.com/wimglenn/advent-of-code-wim/issues/1). Next, duplicate the `.env.example` file and rename it `.env` and then enter your session token & also the current year you are participating in.
 
 > Remember to not commit your session token or share it with anyone. Although this is probably not a big deal for advent of code it is still an important point generally.
 

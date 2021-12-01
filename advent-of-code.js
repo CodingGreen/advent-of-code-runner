@@ -6,10 +6,11 @@ const {
 } = require('fs');
 const sourceCode = require('./src');
 
-const cachePath = `${__dirname}/.cache`;
-
 const session = process.env.ADVENT_OF_CODE_SESSION;
+const year = process.env.YEAR;
 const validInputCheck = /^\d+$/;
+
+const cachePath = `${__dirname}/.cache/${year}`;
 
 function isValidDayChoice(input) {
   if (
@@ -39,7 +40,7 @@ async function getInputData(day) {
 
   console.log('Fetching input data online...');
 
-  const inputUrl = `https://adventofcode.com/2020/day/${day}/input`;
+  const inputUrl = `https://adventofcode.com/${year}/day/${day}/input`;
   const result = await axios.get(inputUrl, {
     headers: {
       Cookie: `session=${session}`,
